@@ -27,7 +27,7 @@ public class Demo {//Class Demo
 		// method with return type and with parameter
 		int sum(int num1,int num2) {
 			System.out.println("--------------------------------------------");
-			System.out.println(" method sum called with return type and with parameter");
+			System.out.println("method sum called with return type and with parameter");
 			int result=num1+num2;
 			return result;		
 	}
@@ -38,6 +38,15 @@ public class Demo {//Class Demo
 		    n1=n1-n2;
 		    System.out.println("n1= "+n1);
 		    System.out.println("n1= "+n2);
+		}
+		void Vote(int age) {
+			
+			if (age>=18) {
+				System.out.println("Eligible to Vote");
+			}
+			else {System.out.println("Not Eligible to Vote");
+			}
+			System.out.println("End of If Statement");
 		}
 		// main method
 		public static void main(String args[]) {
@@ -51,5 +60,11 @@ public class Demo {//Class Demo
 			System.out.println("The Sum is "+sumVal);
 			System.out.println("--------------------------------------------");
 			demoObj.swap(10,5);	//swap method is called
+			System.out.println("--------------------------------------------");
+			demoObj.Vote(12);   //Vote method is called
+			System.out.println("--------------------------------------------");
+			demoObj.Vote(21);   //Vote method is called
 	}
+		
+		
 }
