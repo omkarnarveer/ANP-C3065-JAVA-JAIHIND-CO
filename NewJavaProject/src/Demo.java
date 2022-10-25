@@ -3,31 +3,31 @@ public class Demo {//Class Demo
 		// method without return type and without parameter
 		void display() {
 			System.out.println("--------------------------------------------");
-			System.out.println("without return type and without parameter");
+			System.out.println("Without return type and without parameter");
 			System.out.println("Dislay Method");
 			System.out.println("--------------------------------------------");
 	}
 		// method without return type and with one parameter
 		void displayMessage(String message) {
-			System.out.println("without return type and with one parameter");
+			System.out.println("Without return type and with one parameter");
 			System.out.println("This is message "+message);	
 			System.out.println("--------------------------------------------");
 	}
 		// method without return type and with two parameter
 		void displayTwoMessage(String message1,String message2) {
-			System.out.println("without return type and with one parameter");
+			System.out.println("Without return type and with one parameter");
 			System.out.println("This  messages are "+message1+ " and "+message2);	
 			System.out.println("--------------------------------------------");
 	}	
 		// method with return type and without parameter
 		boolean getStatus() {
-			System.out.println("with return type and without parameter");
+			System.out.println("With return type and without parameter");
 			return true;	
 	}		
 		// method with return type and with parameter
 		int sum(int num1,int num2) {
 			System.out.println("--------------------------------------------");
-			System.out.println("method sum called with return type and with parameter");
+			System.out.println("Method sum called with return type and with parameter");
 			int result=num1+num2;
 			return result;		
 	}
@@ -48,6 +48,26 @@ public class Demo {//Class Demo
 			}
 			System.out.println("End of If Statement");
 		}
+		int FindLargeNo(int num1,int num2, int num3){
+			int num=0;
+		     if (num1 == num2 && num1 == num3) {
+		       //System.out.println ("all are equal");
+		     	num=num1;
+		     }
+		     else if (num1 >=num2 && num1>=num3) {
+		         //System.out.println (num1 + " is greater");
+		    	  num=num1;
+		     }
+		     else if (num2 >=num1 && num2>=num3) {
+		         //System.out.println (num2 + " is greater");
+		    	 num= num2;
+		     }
+		     else if (num3 >=num1 && num3>=num2) {
+		         //System.out.println (num3 + " is greater");
+		     	num = num3;
+		     }
+		     return num;
+		 }
 		// main method
 		public static void main(String args[]) {
 			Demo demoObj=new Demo(); // object created class_name object_name= new Demo() constructor
@@ -64,7 +84,13 @@ public class Demo {//Class Demo
 			demoObj.Vote(12);   //Vote method is called
 			System.out.println("--------------------------------------------");
 			demoObj.Vote(21);   //Vote method is called
-	}
-		
-		
+			System.out.println("--------------------------------------------");
+			int num1=demoObj.FindLargeNo(100,150,300); //FindLargeNo method is called
+			System.out.println("Number Equal is: "+ num1);
+			int num2=demoObj.FindLargeNo(100,200,350);//FindLargeNo method is called
+			System.out.println("Number Larger is: "+ num2);
+			int num3=demoObj.FindLargeNo(100,150,300);//FindLargeNo method is called
+			System.out.println("Number Larger is: "+ num3);
+			System.out.println("--------------------------------------------");
+	}		
 }
