@@ -3,7 +3,7 @@ public class ForLoopDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//for(initalization;condition;increment/decrement)
+		//for(initialization;condition;increment/decrement)
 		for(int i=0;i<=5;i++) {
 		
 	}
