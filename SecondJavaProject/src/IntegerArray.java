@@ -2,7 +2,7 @@
 public class IntegerArray {
 	void setIntegerArray(int[] array) {
 		for(int i=0;i<array.length;i++) {
-			System.out.println("Array Elements are: "+array[i]);
+			System.out.println("Array Elements at index: "+i+ " is: "+array[i]);
 		}
 	}
 //void setInt(int a) {
@@ -27,8 +27,16 @@ public class IntegerArray {
 		//}
 		
 		//ArrObj.setInt(3);	
-		System.out.println("-----------------------------------");
+		/*int arr1[]= {10,15,14,17,13};
+		System.out.println("-----------------------------------------");
+		System.out.println("Element of Array1 at index 0 is: "+arr1[0]);
+		System.out.println("Element of Array1 at index 1 is: "+arr1[1]);
+		System.out.println("Element of Array1 at index 2 is: "+arr1[2]);
+		System.out.println("Element of Array1 at index 3 is: "+arr1[3]);
+		System.out.println("Element of Array1 at index 4 is: "+arr1[4]);
+		*/
+		System.out.println("-----------------------------------------");
 		ArrObj.setIntegerArray(arr);	
-		System.out.println("-----------------------------------");
+		System.out.println("-----------------------------------------");
 	}
 }
