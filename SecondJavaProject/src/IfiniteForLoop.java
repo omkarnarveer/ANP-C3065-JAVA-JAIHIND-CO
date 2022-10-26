@@ -5,7 +5,7 @@ public class IfiniteForLoop {
 		// TODO Auto-generated method stub
 		for(;;) {
 			System.out.println("i:  j:");
-			
+			System.out.println("i:  j:");
 		}
 	}
 
