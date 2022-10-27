@@ -1,3 +1,4 @@
+package array;
 
 public class IntegerArray {
 	void setIntegerArray(int[] array) {

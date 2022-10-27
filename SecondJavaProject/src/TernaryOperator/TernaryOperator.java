@@ -1,3 +1,4 @@
+package TernaryOperator;
 
 public class TernaryOperator {
 
