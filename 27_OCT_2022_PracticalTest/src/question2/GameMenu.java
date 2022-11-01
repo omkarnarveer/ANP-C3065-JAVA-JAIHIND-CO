@@ -35,10 +35,7 @@ public class GameMenu {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		
-		
-		
+
 		GameMenu obj=new GameMenu();
 		//int menuChoice=3;
 		Scanner scannerObj= new Scanner(System.in);
@@ -69,7 +66,7 @@ public class GameMenu {
 				
 			case 4:
 				//System.out.println("3. Exit the Game");
-				System.out.println("Program Terminated By User!!!!!!!!");
+				System.out.println("Program Terminated By User!!!!!!!!!!!");
 				System.exit(0);
 				break;
 			
